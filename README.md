@@ -14,7 +14,3 @@ This respository contains source files for personal webpage.
 ### Contribution guidelines ###
 
 * Private to owner
-
-### Who do I talk to? ###
-
-* goyal26@outlook.com
