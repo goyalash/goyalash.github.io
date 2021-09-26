@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+<ul class="nav">
+    <li><a href="index.html">Home</a></li>
+    <li ><a href="video-surveillance.html"><span>Video Surveillance</span></a></li>
+    <li><a href="visual-acuity.html">Opthalmology</a></li>
+</ul>
+
+<h2 id="icvgip">Deep Network for Group Discovery and Activity Recognition</h2>
+
+<p>Full paper link: <a href="https://dl.acm.org/doi/10.1145/3293353.3293390/">ACM Digital Library</a>
+  Master's Thesis: <a href="res/thesis.pdf">Download link</a>  
+</p>
+<p><a href="https://dl.acm.org/doi/10.1145/3293353.3293390/">Hierarchical Deep Network for Group Discovery and Multi-level Activity Recognition. Ashish Goyal, Neha Bhargava, Subhasis Chaudhuri, Rajbabu Velmurugan. ICVGIP 2018</a></p>
+
+<p>Hierarchy comes naturally in crowd videos since people tend to interact with each other and form different groups. The spatio-temporal interaction among the individuals leads to different group activities and these group activities along with the scene context influence the scene activity.</p>
+
+<p>An illustration of a hierarchy in an activity video is given in the figure below - there are six standing individuals and interaction among them generates two talking groups in the scene. Since the major activity is talking, the scene activity is also talking.</p>
+
+<figure>
+    <img src="res/icvgip-1.PNG" alt="FIGURE 1" width="98%", class="center">
+    <figcaption>Illustration of hierarchy present in a video. There are 6 standing individuals forming two talking groups. The overall scene activity is talking.</figcaption>
+  </figure>
+
+
+<p>In this work, we extend the existing methods by adding an extra layer that finds the groups (or clusters) present in a scene and their activities. We then utilize these group activities along with the scene context to recognize the scene activity. To discover these groups, we propose a min-max criteria within the framework to learn pairwise similarity between any two individuals, which is used by a clustering algorithm. The group activity is captured by an LSTM module whereas the individual and scene activities are captured by CNN-LSTM based modules.</p>
+
+<figure>
+    <iframe width="98%" height="401" src="https://www.youtube.com/embed/40A85ixSDN8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <figcaption>Results of our model being tested on Collective Activity Dataset [1].</figcaption>
+  </figure>
+
+  <footer>[1] Wongun Choi, Khuram Shahid, and Silvio Savarese. 2009. What are they doing?: Collective  activity classification using spatio-temporal relationship among people. In Computer Vision Workshops (ICCVWorkshops), 2009 IEEE 12th International Conference on. IEEE, 1282–1289.</footer>
+
+  
+</body>
+</html>
